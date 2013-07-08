@@ -1,10 +1,10 @@
-<project name="ansj_lucene_4.x" default="dist" basedir=".">
+<project name="ansj_lucene_plug_4.x" default="dist" basedir=".">
 
 	<!-- set global properties for this build -->
 	<property name="src" value="src" />
 	<property name="build" value="build" />
 	<property name="dist" value="dist" />
-	<property name="jarName" value="ansj_lucene_4.x" />
+	<property name="jarName" value="ansj_lucene_plug_4.x" />
 
 
 	<!--依赖jar包-->
@@ -39,7 +39,7 @@
 
 
 		<!-- Put everything in ${build} into the MyProject-${DSTAMP}.jar file -->
-		<jar jarfile="${dist}/${jarName}-${DSTAMP}.jar" basedir="${build}">
+		<jar jarfile="${dist}/${jarName}.jar" basedir="${build}">
 		</jar>
 
 		<delete dir="${build}" />
